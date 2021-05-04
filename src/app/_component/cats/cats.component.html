@@ -1,0 +1,13 @@
+<p>cats works!</p>
+<h4> ------- affichage liste chats ------- </h4>
+
+<div *ngFor="let chat of chats">
+    <p> le chat de nom : {{chat.nom}} et de couleur : {{chat.couleur}} 
+        a : {{chat.age}} ans !! </p>
+        <p [ngStyle]="myStyle2"> {{ chat.couleur }} </p> 
+    <button (click) = "miauleChat(chat)" > Le chat va s'exprimer</button>
+    <input type="text" [(ngModel)]="chat.nom">
+</div>
+
+
+s
